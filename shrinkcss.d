@@ -198,8 +198,9 @@ private:
             break;
 
         default:
+            import std.exception : enforce;
             import std.format : format;
-            assert(false, format("unhandled ['%c' %d]", input[0], input[0]));
+            enforce(false, format("unhandled ['%c' %d]", input[0], input[0]));
         }
     }
 
