@@ -148,6 +148,8 @@ private:
         case ')':
         case '{':
         case '}':
+        case '>':
+        case '+':
             this.front = Lexem(Punctuation, advance(1));
             break;
 
